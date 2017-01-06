@@ -10,7 +10,7 @@ This is a simple note taking application called Knook. Also, this project is a b
 - MySQL (data storage)
 
 ## Features
-Knook provides full CRUD operations for user and note management.
+Knook provides full CRUD operations for usuario and note management.
 
 ## Getting Started
 
@@ -55,65 +55,65 @@ The routes for these are
 ### List users
 You can list all users making a GET request to ```/users.json```
 
-### Get user
-You can get one user making a GET request to ```/users/{id}.json```
+### Get usuario
+You can get one usuario making a GET request to ```/users/{id}.json```
 
-### Create user
-You can create an new user making a POST request to ```/users.json``` with the following parameters
+### Create usuario
+You can create an new usuario making a POST request to ```/users.json``` with the following parameters
 ```
 { "email": "johndoe@example.com", "password": "password" }
 ```
 
-### Update user
-You can update an existing user making a PUT request to ```/users/{id}.json``` with the following parameters
+### Update usuario
+You can update an existing usuario making a PUT request to ```/users/{id}.json``` with the following parameters
 ```
 { "email": "johndoe@example.com", "password": "password" }
 ```
 
-### Delete user
-You can delete an existing user making a DELETE request to ```/users/{id}.json```
+### Delete usuario
+You can delete an existing usuario making a DELETE request to ```/users/{id}.json```
 
 ### List groups
-You can list all groups owned by user, making a GET request to ```/users/{id}/groups.json```
+You can list all groups owned by usuario, making a GET request to ```/users/{id}/groups.json```
 
 ### Get group
-You can get one group for owned by user, making a GET request to ```/users/{id}/groups/{id}.json```
+You can get one group for owned by usuario, making a GET request to ```/users/{id}/groups/{id}.json```
 
 ### Create group
-You can create an new group owned by user, making a POST request to ```/users/{id}/groups/{id}.json``` with the following parameters
+You can create an new group owned by usuario, making a POST request to ```/users/{id}/groups/{id}.json``` with the following parameters
 ```
 { "name": "Some group", "description": "Some description..." }
 ```
 
 ### Update group
-You can update an existing group owned by user, making a PUT request to ```/users/{id}/groups/{id}.json``` with the following parameters
+You can update an existing group owned by usuario, making a PUT request to ```/users/{id}/groups/{id}.json``` with the following parameters
 ```
 { "name": "Some group", "description": "Some description..." }
 ```
 
 ### Delete group
-You can delete an existing group owned by user, making a DELETE request to ```/users/{id}/groups/{id}.json```
+You can delete an existing group owned by usuario, making a DELETE request to ```/users/{id}/groups/{id}.json```
 
 ### List notes
-You can list all notes for a specific group owned by user, making a GET request to ```/users/{id}/groups/{id}/notes.json```
+You can list all notes for a specific group owned by usuario, making a GET request to ```/users/{id}/groups/{id}/notes.json```
 
 ### Get note
-You can get one note for a specific group owned by user, making a GET request to ```/users/{id}/groups/{id}/notes/{id}.json```
+You can get one note for a specific group owned by usuario, making a GET request to ```/users/{id}/groups/{id}/notes/{id}.json```
 
 ### Create note
-You can create an new note for a specific group owned by user, making a POST request to ```/users/{id}/groups/{id}/notes.json``` with the following parameters
+You can create an new note for a specific group owned by usuario, making a POST request to ```/users/{id}/groups/{id}/notes.json``` with the following parameters
 ```
 { "title": "First note", "content": "Some note..." }
 ```
 
 ### Update note
-You can update an existing note for a specific group owned by user, making a PUT request to ```/users/{id}/groups/{id}/notes/{id}.json``` with the following parameters
+You can update an existing note for a specific group owned by usuario, making a PUT request to ```/users/{id}/groups/{id}/notes/{id}.json``` with the following parameters
 ```
 { "title": "Another note", "content": "Another note..." }
 ```
 
 ### Delete note
-You can delete an existing note for a specific group owned by user, making a DELETE request to ```/users/{id}/groups/{id}/notes/{id}.json```
+You can delete an existing note for a specific group owned by usuario, making a DELETE request to ```/users/{id}/groups/{id}/notes/{id}.json```
 
 ### List attachments
 You can list all attachments for a specific note making a GET request to ```/attachments/{note_id}.json```
